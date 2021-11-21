@@ -1,0 +1,423 @@
+@media (max-width: 400px){
+    /* Elementos ocultos */
+	.dis-mov-500, .dis-mov-750, .dis-des-1020{
+		display: none;
+	}
+
+	/* Elementos visibles */
+	.dis-mov-400{
+		display: flex;
+	}
+
+    /* Header */
+    .header{
+        padding: 10px!important;
+    }
+
+    /* Seccion de presentacion */
+    .presentacion .item-1{
+        order: -1;
+	}
+
+    .presentacion .item-1 img{
+        max-height: 300px;
+    }
+
+    .contacto .item-1{
+        order: -1;
+    }
+
+	.presentacion .item-1 div img{
+        max-height: 300px;
+    }
+
+    .presentacion .item-2, .contacto .item-2{
+        order: 0;
+	}
+
+    .ico-proteco{
+		height: 50px;
+	}
+
+    /* Carousel */
+    .carousel__cursos{
+        padding: 0 120px;
+    }
+
+    .card {
+		margin: 25px 40px;
+		text-align: center;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 749px){
+    /* Elementos ocultos */
+    .dis-mov-750, .dis-des-1020{
+	    display: none;
+    }
+
+    /* Elementos visibles de version movil */
+    .dis-mov-400, .dis-mov-500{
+        
+        display: flex;
+    }
+
+    .header{
+        padding: 20px!important;
+    }
+
+    nav{
+       height: 120px; 
+    }
+
+    .ico-proteco{
+        height: 80px;
+    }
+
+    main section h2{
+        padding: 20px 0;
+    }
+
+    /* Seccion de presentacion */
+    .presentacion .item-1, .contacto .item-1{
+        order: -1;
+	}
+
+    .presentacion .item-1 img{
+        max-height: 320px;
+    }
+
+    .presentacion .item-, .contacto .item-2{
+        order: 0;
+	}
+
+    /* Carousel */
+    .carousel__cursos{
+        padding: 0 120px;
+    }
+
+    .card {
+		margin: 25px 35px;
+		text-align: center;
+	}
+}
+
+@media (min-width: 750px) and (max-width: 1099px){
+    /* Elementos ocultos */
+    .dis-des-1020{
+	    display: none;
+    }
+
+    /* Elementos visibles */
+    .dis-mov-400, .dis-mov-500, .dis-mov-750{
+        display: flex;
+    }
+
+    .header{
+        padding: 40px!important;
+    }
+
+	nav, main, footer{
+		/* border: black 2px solid; */
+		width: 100%;
+		padding: 26px 20px;
+	}
+
+    .carousel__cursos{
+        padding: 0 120px;
+    }
+
+    main{
+        padding: 26px 0;
+    }
+
+    /* Navbar */
+    nav{
+       height: 120px; 
+    }
+
+    .ico-proteco{
+        height: 80px;
+    }
+
+    main section h2{
+        padding: 20px 0;
+    }
+    
+    /* Seccion de presentacion */
+    .presentacion{
+		min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+	}
+
+    .presentacion .item-1, .contacto .item-1{
+        order: -1;
+    }
+
+    .presentacion .item-, .contacto .item-2{
+        order: 0;
+    }
+
+    .presentacion .item-1{
+        max-height: 400px;
+    }
+
+    /* Carousel */
+    .card {
+		margin: 25px 30px;
+		text-align: center;
+	}
+
+    .card__face__iconos img{
+        width: auto;
+		height: 50px;
+	}
+
+    .iconos-cursos{
+		width: auto;
+		height: 150px;
+	}
+
+    /* Talleres */
+    .col-pub img{
+		width: 300px;
+		height: 300px;
+	}
+
+    /* Contacto */
+    .contacto{
+        display: flex;
+		flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .contacto .item-1{
+        margin-top: 40px;
+        align-items: flex-start;
+    }
+
+    .img-pub{
+		height: 300px;
+	}
+
+}
+
+@media (max-width: 1099px){
+    /* Header */
+    .header{
+        padding: 50px 100px!important;
+        height: 180px;
+        position: fixed;
+        z-index: 1;
+        background-color: var(--azul);
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: var(--lavanda);
+        position: fixed;
+        top: 180px;
+        width: 100%;
+        padding: 20px 0;
+        height: 100vh;
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .nav-menu-item {
+        line-height: 70px;
+    }
+
+    .nav-menu-link{
+        color: var(--negro);
+    }
+
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+        background: none;
+        color: var(--rosa);
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+
+    .nav-toggle:focus:not(:focus-visible) {
+        outline: none;
+    }
+
+    main{
+        position: relative;
+        top: 180px;
+    }
+}
+
+@media(min-width: 1100px){
+    /* Orden entre elementos */
+    .presentacion .item-1, .contacto .item-2{
+        order: 0;
+    }
+
+    .presentacion .item-2, .contacto .item-1{
+        order: -1;
+    }
+
+    .header{
+        padding: 10px 80px!important;
+    }
+
+    .nav-ico{
+        display: flex;
+        align-items: center;
+    }  
+}
+
+@media (min-width: 1100px) {
+     /* Fonts */
+    h1{
+        font-size: 40px;
+    }
+
+    /* Elementos ocultos */
+    .dis-menu{
+        display: none;
+    }
+    
+    /* Elementos visibles */
+    .dis-mov-400, .dis-mov-500, .dis-mov-750, .dis-des-1020{
+	    display: flex;
+        justify-content: space-between;
+    }
+
+    nav, main, footer{
+		width: 100%;
+	}
+
+    .header{
+        height: 140px;
+    }
+
+    .container-tecnologias, footer{
+		padding: 26px 120px;
+	}
+
+    .carousel__cursos{
+        padding: 0 120px;
+    }
+
+    /* Navbar */
+    nav{
+       height: 140px;
+    }
+
+    .ico-proteco{
+        height: 100px;
+    }
+
+    main section h2{
+        padding: 40px 0;
+    }
+
+    /* Presentacion */
+    .presentacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .presentacion .item-2 div, .presentacion .item-2 .container-btn{
+        justify-content: flex-start;
+    }
+
+    .presentacion .item-2 div h1, .presentacion .item-2 div p{
+        text-align: left;
+    }
+
+    img.img-principal{
+		min-height: 450px;
+	}
+
+    /* Carousel */
+    .card {
+        padding: 0;
+		margin: 25px 30px;
+		text-align: center;
+	}
+
+    .card__face__iconos img{
+        width: auto;
+		height: 50px;
+	}
+
+    .iconos-cursos{
+		width: auto;
+		height: 150px;
+	}
+
+    /* Talleres */
+    .col-pub img{
+		width: 400px;
+		height: 400px;
+	}
+
+    /* Contacto */
+    .contacto{
+        display: flex;
+		flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .contacto .item-1{
+        margin-top: 40px;
+        align-items: flex-start;
+    }
+
+    .img-pub{
+		height: 450px;
+	}
+}
+
+@media (min-width: 1220px) {
+     /* Fonts */
+    h1{
+        font-size: 50px;
+    }
+
+    img.img-principal{
+		min-height: 550px;
+	}
+    
+    .ico-proteco{
+        height: 90px;
+    }
+
+    /* Carousel */
+    .card {
+        padding: 0;
+		margin: 25px 50px;
+		text-align: center;
+	}
+
+    /* Presentacion */
+    .container{
+       margin: 0;
+       padding: 0;
+    }
+
+    .presentacion .item-2 {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .presentacion .item-2 div h1, .presentacion .item-2 div p{
+        text-align: left;
+    }
+}
